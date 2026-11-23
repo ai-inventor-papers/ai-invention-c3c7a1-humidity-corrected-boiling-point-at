@@ -1,0 +1,20 @@
+{
+  "type": "bar",
+  "title": "Model Performance Metrics Comparison",
+  "xlabel": "Metric",
+  "ylabel": "Error (°C)",
+  "aspect": "16:9",
+  "categories": ["RMSE", "MBE", "MAE"],
+  "series": [
+    {"label": "ISA Baseline", "values": [0.651, -0.523, 0.538]},
+    {"label": "ISA Measured", "values": [0.659, -0.532, 0.550]},
+    {"label": "Kinetic", "values": [0.390, -0.012, 0.339]},
+    {"label": "Dissolved Gas", "values": [0.776, -0.668, 0.675]}
+  ],
+  "color_map": {
+    "ISA Baseline": "#0173B2",
+    "ISA Measured": "#56B4E9",
+    "Kinetic": "#DE8F05",
+    "Dissolved Gas": "#029E73"
+  }
+}

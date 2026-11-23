@@ -1,0 +1,79 @@
+{
+  "metadata": {
+    "evaluation_name": "Kinetic Boiling Model Evaluation",
+    "description": "Rigorous evaluation of boiling point models using RMSE, MBE, MAE, paired t-tests, bootstrap CIs, and permutation tests."
+  },
+  "metrics_agg": {
+    "isa_baseline_RMSE": 0.6514600060823946,
+    "isa_baseline_MBE": -0.5227355218401684,
+    "isa_baseline_MAE": 0.5377968598406142,
+    "isa_baseline_Std": 0.389,
+    "isa_measured_RMSE": 0.659301429487993,
+    "isa_measured_MBE": -0.5315692499089053,
+    "isa_measured_MAE": 0.5503318062395266,
+    "isa_measured_Std": 0.39,
+    "kinetic_RMSE": 0.38992901857385753,
+    "kinetic_MBE": -0.012211848326916908,
+    "kinetic_MAE": 0.3390011467129007,
+    "kinetic_Std": 0.39,
+    "gas_RMSE": 0.7762728361482482,
+    "gas_MBE": -0.6682996536154505,
+    "gas_MAE": 0.674595841941749,
+    "gas_Std": 0.395,
+    "paired_ttest_stat_abs": 2.140440254909638,
+    "paired_ttest_pval_abs": 0.04550511819976847,
+    "paired_ttest_stat_signed": -30.136,
+    "paired_ttest_pval_signed": 1e-15,
+    "paired_ttest_isa_measured_vs_kinetic_stat": -1301.754,
+    "paired_ttest_isa_measured_vs_kinetic_pval": 1e-15,
+    "cohens_d_abs": 0.479,
+    "bootstrap_ci_rmse_diff_lower": 0.095,
+    "bootstrap_ci_rmse_diff_upper": 0.393,
+    "permutation_test_pval": 0.0508,
+    "nucleation_effect_bias_reduction": 0.511,
+    "dissolved_gas_effect_bias_increase": -0.146
+  },
+  "datasets": [
+    {
+      "dataset": "field_measurements_eval",
+      "examples": [
+        {
+          "input": "Site: site_0, Altitude: 0.0m, P_measured: 1014.74hPa",
+          "output": "Measured BP: 100.94\u00b0C",
+          "predict_isa_baseline": "100.00\u00b0C",
+          "eval_isa_baseline_error": -0.9373565114535296,
+          "predict_isa_measured": "100.04\u00b0C",
+          "eval_isa_measured_error": -0.8955111078352758,
+          "predict_kinetic": "100.56\u00b0C",
+          "eval_kinetic_error": -0.37890220336836933,
+          "predict_gas": "99.94\u00b0C",
+          "eval_gas_error": -0.9953642581742912
+        },
+        {
+          "input": "Site: site_263, Altitude: 263.2m, P_measured: 981.42hPa",
+          "output": "Measured BP: 99.86\u00b0C",
+          "predict_isa_baseline": "99.11\u00b0C",
+          "eval_isa_baseline_error": -0.7419330158600701,
+          "predict_isa_measured": "99.09\u00b0C",
+          "eval_isa_measured_error": -0.7622064995211986,
+          "predict_kinetic": "99.61\u00b0C",
+          "eval_kinetic_error": -0.24531802681717352,
+          "predict_gas": "98.99\u00b0C",
+          "eval_gas_error": -0.8654494838369544
+        },
+        {
+          "input": "Site: site_526, Altitude: 526.3m, P_measured: 950.55hPa",
+          "output": "Measured BP: 98.84\u00b0C",
+          "predict_isa_baseline": "98.23\u00b0C",
+          "eval_isa_baseline_error": -0.6046998522431153,
+          "predict_isa_measured": "98.19\u00b0C",
+          "eval_isa_measured_error": -0.6464511777211186,
+          "predict_kinetic": "98.71\u00b0C",
+          "eval_kinetic_error": -0.12929061910310224,
+          "predict_gas": "98.08\u00b0C",
+          "eval_gas_error": -0.7530476026277739
+        }
+      ]
+    }
+  ]
+}
