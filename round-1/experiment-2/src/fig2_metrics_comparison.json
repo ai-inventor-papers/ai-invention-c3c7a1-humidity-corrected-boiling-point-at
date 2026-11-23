@@ -1,0 +1,25 @@
+{
+  "type": "bar",
+  "title": "Model Performance Comparison: RMSE and MBE",
+  "xlabel": "Model",
+  "ylabel": "Error (°C)",
+  "aspect": "16:9",
+  "categories": [
+    "ISA Baseline (ISA Pressure)",
+    "ISA (Measured Pressure)",
+    "Kinetic Model",
+    "Dissolved Gas Model"
+  ],
+  "series": [
+    {
+      "label": "RMSE",
+      "values": [0.651, 0.659, 0.390, 0.776],
+      "errors": [0.05, 0.05, 0.04, 0.06]
+    },
+    {
+      "label": "|MBE|",
+      "values": [0.523, 0.532, 0.012, 0.668],
+      "errors": [0.04, 0.04, 0.01, 0.05]
+    }
+  ]
+}

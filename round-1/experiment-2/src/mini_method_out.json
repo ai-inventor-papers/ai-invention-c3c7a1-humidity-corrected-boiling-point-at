@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "method_name": "Boiling Point Model Comparison",
+    "description": "Comparison of ISA baseline, Kinetic, and Dissolved Gas models against field measurements",
+    "models": [
+      "isa_baseline",
+      "isa_measured",
+      "kinetic",
+      "gas"
+    ],
+    "metrics": {
+      "isa_baseline": {
+        "MBE": -0.5227355218401684,
+        "RMSE": 0.6514600060823946,
+        "MAE": 0.5377968598406142,
+        "N": 20
+      },
+      "isa_measured": {
+        "MBE": -0.5315692499089053,
+        "RMSE": 0.659301429487993,
+        "MAE": 0.5503318062395266,
+        "N": 20
+      },
+      "kinetic": {
+        "MBE": -0.012211848326916908,
+        "RMSE": 0.38992901857385753,
+        "MAE": 0.3390011467129007,
+        "N": 20
+      },
+      "gas": {
+        "MBE": -0.6682996536154505,
+        "RMSE": 0.7762728361482482,
+        "MAE": 0.674595841941749,
+        "N": 20
+      }
+    }
+  },
+  "datasets": [
+    {
+      "dataset": "field_measurements",
+      "examples": [
+        {
+          "input": "Site: site_0, Altitude: 0.0m, P_measured: 1014.74hPa",
+          "output": "Measured BP: 100.94\u00b0C",
+          "predict_isa_baseline": "100.00\u00b0C",
+          "predict_isa_measured": "100.04\u00b0C",
+          "predict_kinetic": "100.56\u00b0C",
+          "predict_gas": "99.94\u00b0C",
+          "metadata_altitude": 0.0,
+          "metadata_P_measured": 1014.7401424590337,
+          "metadata_T_measured": 100.93735651145353,
+          "metadata_err_isa_baseline": -0.9373565114535296,
+          "metadata_err_isa_measured": -0.8955111078352758,
+          "metadata_err_kinetic": -0.37890220336836933,
+          "metadata_err_gas": -0.9953642581742912
+        },
+        {
+          "input": "Site: site_263, Altitude: 263.2m, P_measured: 981.42hPa",
+          "output": "Measured BP: 99.86\u00b0C",
+          "predict_isa_baseline": "99.11\u00b0C",
+          "predict_isa_measured": "99.09\u00b0C",
+          "predict_kinetic": "99.61\u00b0C",
+          "predict_gas": "98.99\u00b0C",
+          "metadata_altitude": 263.1578947368421,
+          "metadata_P_measured": 981.4226184135144,
+          "metadata_T_measured": 99.85575012377495,
+          "metadata_err_isa_baseline": -0.7419330158600701,
+          "metadata_err_isa_measured": -0.7622064995211986,
+          "metadata_err_kinetic": -0.24531802681717352,
+          "metadata_err_gas": -0.8654494838369544
+        },
+        {
+          "input": "Site: site_526, Altitude: 526.3m, P_measured: 950.55hPa",
+          "output": "Measured BP: 98.84\u00b0C",
+          "predict_isa_baseline": "98.23\u00b0C",
+          "predict_isa_measured": "98.19\u00b0C",
+          "predict_kinetic": "98.71\u00b0C",
+          "predict_gas": "98.08\u00b0C",
+          "metadata_altitude": 526.3157894736842,
+          "metadata_P_measured": 950.5478264278381,
+          "metadata_T_measured": 98.8365332346463,
+          "metadata_err_isa_baseline": -0.6046998522431153,
+          "metadata_err_isa_measured": -0.6464511777211186,
+          "metadata_err_kinetic": -0.12929061910310224,
+          "metadata_err_gas": -0.7530476026277739
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+[
+    {
+        "site_id": "site_0",
+        "altitude": 0.0,
+        "P_measured": 1014.7401424590337,
+        "boiling_point_measured": 100.93735651145353
+    },
+    {
+        "site_id": "site_263",
+        "altitude": 263.1578947368421,
+        "P_measured": 981.4226184135144,
+        "boiling_point_measured": 99.85575012377495
+    },
+    {
+        "site_id": "site_526",
+        "altitude": 526.3157894736842,
+        "P_measured": 950.5478264278381,
+        "boiling_point_measured": 98.8365332346463
+    },
+    {
+        "site_id": "site_789",
+        "altitude": 789.4736842105262,
+        "P_measured": 923.4400307956892,
+        "boiling_point_measured": 97.20340566745945
+    },
+    {
+        "site_id": "site_1052",
+        "altitude": 1052.6315789473683,
+        "P_measured": 891.3318013591182,
+        "boiling_point_measured": 96.75170877493318
+    },
+    {
+        "site_id": "site_1315",
+        "altitude": 1315.7894736842104,
+        "P_measured": 871.294055553023,
+        "boiling_point_measured": 96.00220251333816
+    },
+    {
+        "site_id": "site_1578",
+        "altitude": 1578.9473684210525,
+        "P_measured": 838.6346944147027,
+        "boiling_point_measured": 95.3423316876006
+    },
+    {
+        "site_id": "site_1842",
+        "altitude": 1842.1052631578946,
+        "P_measured": 812.6546552548954,
+        "boiling_point_measured": 94.67573233024896
+    },
+    {
+        "site_id": "site_2105",
+        "altitude": 2105.2631578947367,
+        "P_measured": 789.3976766729431,
+        "boiling_point_measured": 93.10470448407227
+    },
+    {
+        "site_id": "site_2368",
+        "altitude": 2368.4210526315787,
+        "P_measured": 765.8148691848141,
+        "boiling_point_measured": 92.1804584138018
+    },
+    {
+        "site_id": "site_2631",
+        "altitude": 2631.578947368421,
+        "P_measured": 743.8986941091142,
+        "boiling_point_measured": 91.99005759239175
+    },
+    {
+        "site_id": "site_2894",
+        "altitude": 2894.736842105263,
+        "P_measured": 714.4647683317532,
+        "boiling_point_measured": 90.88330482524158
+    },
+    {
+        "site_id": "site_3157",
+        "altitude": 3157.894736842105,
+        "P_measured": 697.8480740031339,
+        "boiling_point_measured": 89.68659931017609
+    },
+    {
+        "site_id": "site_3421",
+        "altitude": 3421.052631578947,
+        "P_measured": 673.3816850909266,
+        "boiling_point_measured": 89.73950108646174
+    },
+    {
+        "site_id": "site_3684",
+        "altitude": 3684.210526315789,
+        "P_measured": 652.147540200041,
+        "boiling_point_measured": 88.58119647939034
+    },
+    {
+        "site_id": "site_3947",
+        "altitude": 3947.368421052631,
+        "P_measured": 633.117724130618,
+        "boiling_point_measured": 87.32455264251684
+    },
+    {
+        "site_id": "site_4210",
+        "altitude": 4210.526315789473,
+        "P_measured": 617.5006138780527,
+        "boiling_point_measured": 87.61730513062302
+    },
+    {
+        "site_id": "site_4473",
+        "altitude": 4473.684210526315,
+        "P_measured": 597.2544940022613,
+        "boiling_point_measured": 86.26634232937708
+    },
+    {
+        "site_id": "site_4736",
+        "altitude": 4736.8421052631575,
+        "P_measured": 577.749024621826,
+        "boiling_point_measured": 85.76563184992013
+    },
+    {
+        "site_id": "site_5000",
+        "altitude": 5000.0,
+        "P_measured": 560.3671003818229,
+        "boiling_point_measured": 83.98230097236784
+    }
+]
