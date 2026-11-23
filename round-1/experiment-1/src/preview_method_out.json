@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "method_name": "Boiling Point Models Comparison",
+    "description": "Comparison of ISA baseline, humidity-corrected, and local pressure-corrected boiling point models",
+    "n_samples": 51,
+    "metrics": {
+      "isa_baseline": {
+        "rmse": 0.2053241855523809,
+        "mae": 0.1582167317142684,
+        "bias": -0.06449174274447676,
+        "r2": 0.9982127895059592,
+        "n": 51
+      },
+      "humidity_corrected": {
+        "rmse": 1.449682688520007,
+        "mae": 1.0090424039791186,
+        "bias": -0.9737220639437987,
+        "r2": 0.9109074491115642,
+        "n": 51
+      },
+      "local_pressure_corrected": {
+        "rmse": 0.6849555742667759,
+        "mae": 0.5468213520537911,
+        "bias": 0.5468213520537911,
+        "r2": 0.9801106634319814,
+        "n": 51
+      }
+    },
+    "paired_ttests": {
+      "humidity_vs_isa": {
+        "t_statistic": 6.471888694040357,
+        "p_value": 4.022506970399135e-08,
+        "significant": true
+      },
+      "pressure_vs_isa": {
+        "t_statistic": 8.857190584986489,
+        "p_value": 8.09266280145007e-12,
+        "significant": true
+      },
+      "pressure_vs_humidity": {
+        "t_statistic": -5.131199783798185,
+        "p_value": 4.717657226403073e-06,
+        "significant": true
+      }
+    }
+  },
+  "datasets": [
+    {
+      "dataset": "boiling_point_field_data",
+      "examples": [
+        {
+          "input": "Altitude: 0.0 m, Temp: 20.0\u00b0C, RH: 50.0%, Station Pressure: 101325.0 Pa",
+          "output": "Measured boiling point: 100.0\u00b0C",
+          "metadata_altitude": 0.0,
+          "metadata_temp_c": 20.0,
+          "metadata_rh_percent": 50.0,
+          "metadata_station_pressure_pa": 101325.0,
+          "metadata_measured_bp_c": 100.0,
+          "predict_isa": "100.000",
+          "predict_humidity_corrected": "100.000",
+          "predict_local_pressure_corrected": "100.000"
+        },
+        {
+          "input": "Altitude: 100.0 m, Temp: 18.0\u00b0C, RH: 55.0%, Station Pressure: 100125.0 Pa",
+          "output": "Measured boiling point: 99.6\u00b0C",
+          "metadata_altitude": 100.0,
+          "metadata_temp_c": 18.0,
+          "metadata_rh_percent": 55.0,
+          "metadata_station_pressure_pa": 100125.0,
+          "metadata_measured_bp_c": 99.6,
+          "predict_isa": "99.662",
+          "predict_humidity_corrected": "99.667",
+          "predict_local_pressure_corrected": "99.661"
+        },
+        {
+          "input": "Altitude: 200.0 m, Temp: 17.0\u00b0C, RH: 60.0%, Station Pressure: 98940.0 Pa",
+          "output": "Measured boiling point: 99.3\u00b0C",
+          "metadata_altitude": 200.0,
+          "metadata_temp_c": 17.0,
+          "metadata_rh_percent": 60.0,
+          "metadata_station_pressure_pa": 98940.0,
+          "metadata_measured_bp_c": 99.3,
+          "predict_isa": "99.325",
+          "predict_humidity_corrected": "99.332",
+          "predict_local_pressure_corrected": "99.323"
+        }
+      ]
+    }
+  ]
+}
