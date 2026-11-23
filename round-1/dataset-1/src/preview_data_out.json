@@ -1,0 +1,149 @@
+{
+  "metadata": {
+    "description": "High-Altitude Boiling Point Dataset Compilation for humidity-correction model validation",
+    "target_variables": [
+      "boiling_point_c"
+    ],
+    "feature_names": [
+      "pressure_hpa",
+      "altitude_m",
+      "ambient_temperature_c",
+      "relative_humidity_pct"
+    ],
+    "total_examples": 618
+  },
+  "datasets": [
+    {
+      "dataset": "forbes_boiling_points",
+      "examples": [
+        {
+          "input": "{\"pressure_hpa\": 117.46, \"altitude_m\": 14911.7, \"ambient_temperature_c\": null, \"relative_humidity_pct\": null}",
+          "output": "131.79",
+          "metadata_row_index": 0,
+          "metadata_feature_names": [
+            "pressure_hpa",
+            "altitude_m",
+            "ambient_temperature_c"
+          ],
+          "metadata_task_type": "regression",
+          "metadata_source": "Forbes Alps 1857",
+          "metadata_n_classes": null
+        },
+        {
+          "input": "{\"pressure_hpa\": 116.92, \"altitude_m\": 14937.5, \"ambient_temperature_c\": null, \"relative_humidity_pct\": null}",
+          "output": "131.79",
+          "metadata_row_index": 1,
+          "metadata_feature_names": [
+            "pressure_hpa",
+            "altitude_m",
+            "ambient_temperature_c"
+          ],
+          "metadata_task_type": "regression",
+          "metadata_source": "Forbes Alps 1857",
+          "metadata_n_classes": null
+        },
+        {
+          "input": "{\"pressure_hpa\": 127.03, \"altitude_m\": 14470.2, \"ambient_temperature_c\": null, \"relative_humidity_pct\": null}",
+          "output": "135.02",
+          "metadata_row_index": 2,
+          "metadata_feature_names": [
+            "pressure_hpa",
+            "altitude_m",
+            "ambient_temperature_c"
+          ],
+          "metadata_task_type": "regression",
+          "metadata_source": "Forbes Alps 1857",
+          "metadata_n_classes": null
+        }
+      ]
+    },
+    {
+      "dataset": "noaa_ghcn_daily",
+      "examples": [
+        {
+          "input": "{\"pressure_hpa\": null, \"altitude_m\": null, \"ambient_temperature_c\": 27.6, \"relative_humidity_pct\": null}",
+          "output": "NA",
+          "metadata_row_index": 0,
+          "metadata_feature_names": [
+            "pressure_hpa",
+            "altitude_m",
+            "ambient_temperature_c"
+          ],
+          "metadata_task_type": "regression",
+          "metadata_source": "NOAA GHCN Daily - station RQW00011641",
+          "metadata_n_classes": null
+        },
+        {
+          "input": "{\"pressure_hpa\": null, \"altitude_m\": null, \"ambient_temperature_c\": 10.8, \"relative_humidity_pct\": null}",
+          "output": "NA",
+          "metadata_row_index": 1,
+          "metadata_feature_names": [
+            "pressure_hpa",
+            "altitude_m",
+            "ambient_temperature_c"
+          ],
+          "metadata_task_type": "regression",
+          "metadata_source": "NOAA GHCN Daily - station USW00003017",
+          "metadata_n_classes": null
+        },
+        {
+          "input": "{\"pressure_hpa\": null, \"altitude_m\": null, \"ambient_temperature_c\": 19.7, \"relative_humidity_pct\": null}",
+          "output": "NA",
+          "metadata_row_index": 2,
+          "metadata_feature_names": [
+            "pressure_hpa",
+            "altitude_m",
+            "ambient_temperature_c"
+          ],
+          "metadata_task_type": "regression",
+          "metadata_source": "NOAA GHCN Daily - station USW00003102",
+          "metadata_n_classes": null
+        }
+      ]
+    },
+    {
+      "dataset": "rw2_openmeteo_corpus",
+      "examples": [
+        {
+          "input": "{\"pressure_hpa\": 1013.25, \"altitude_m\": null, \"ambient_temperature_c\": 0.3, \"relative_humidity_pct\": null}",
+          "output": "NA",
+          "metadata_row_index": 0,
+          "metadata_feature_names": [
+            "pressure_hpa",
+            "altitude_m",
+            "ambient_temperature_c"
+          ],
+          "metadata_task_type": "regression",
+          "metadata_source": "rw2-openmeteo-corpus",
+          "metadata_n_classes": null
+        },
+        {
+          "input": "{\"pressure_hpa\": 1013.25, \"altitude_m\": null, \"ambient_temperature_c\": 19.0, \"relative_humidity_pct\": null}",
+          "output": "NA",
+          "metadata_row_index": 3493,
+          "metadata_feature_names": [
+            "pressure_hpa",
+            "altitude_m",
+            "ambient_temperature_c"
+          ],
+          "metadata_task_type": "regression",
+          "metadata_source": "rw2-openmeteo-corpus",
+          "metadata_n_classes": null
+        },
+        {
+          "input": "{\"pressure_hpa\": 1013.25, \"altitude_m\": null, \"ambient_temperature_c\": -5.9, \"relative_humidity_pct\": null}",
+          "output": "NA",
+          "metadata_row_index": 6986,
+          "metadata_feature_names": [
+            "pressure_hpa",
+            "altitude_m",
+            "ambient_temperature_c"
+          ],
+          "metadata_task_type": "regression",
+          "metadata_source": "rw2-openmeteo-corpus",
+          "metadata_n_classes": null
+        }
+      ]
+    }
+  ]
+}
