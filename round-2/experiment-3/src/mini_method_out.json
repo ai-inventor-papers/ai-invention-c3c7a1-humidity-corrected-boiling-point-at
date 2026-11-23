@@ -1,0 +1,33 @@
+{
+  "datasets": [
+    {
+      "dataset": "forbes_1857_alpine",
+      "examples": [
+        {
+          "input": "Predict boiling point for pressure: 70.40 kPa",
+          "output": "{\"actual_c\": 90.27777777777777, \"pred_isa_c\": 90.60444054880872, \"pred_local_c\": 98.453902405, \"pred_kinetic_zero_hf_c\": 90.60444054880872, \"pred_dissolved_gas_c\": 90.50444054880873}",
+          "predict_isa": "90.60444054880872",
+          "predict_local": "98.453902405",
+          "predict_kinetic_zero_hf": "90.60444054880872",
+          "predict_dissolved_gas": "90.50444054880873"
+        },
+        {
+          "input": "Predict boiling point for pressure: 70.40 kPa",
+          "output": "{\"actual_c\": 90.16666666666667, \"pred_isa_c\": 90.60444054880872, \"pred_local_c\": 98.453902405, \"pred_kinetic_zero_hf_c\": 90.60444054880872, \"pred_dissolved_gas_c\": 90.50444054880873}",
+          "predict_isa": "90.60444054880872",
+          "predict_local": "98.453902405",
+          "predict_kinetic_zero_hf": "90.60444054880872",
+          "predict_dissolved_gas": "90.50444054880873"
+        },
+        {
+          "input": "Predict boiling point for pressure: 75.86 kPa",
+          "output": "{\"actual_c\": 92.16666666666667, \"pred_isa_c\": 92.49048003980016, \"pred_local_c\": 98.7265068, \"pred_kinetic_zero_hf_c\": 92.49048003980016, \"pred_dissolved_gas_c\": 92.39048003980017}",
+          "predict_isa": "92.49048003980016",
+          "predict_local": "98.7265068",
+          "predict_kinetic_zero_hf": "92.49048003980016",
+          "predict_dissolved_gas": "92.39048003980017"
+        }
+      ]
+    }
+  ]
+}
